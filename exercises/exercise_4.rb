@@ -15,3 +15,13 @@ store = Store.create(name: "Yaletown", annual_revenue: 430000, mens_apparel: tru
 
 # find all users named David who are Code Artists and sort by created_at in reverse chronological order
 @mens_stores = Store.where(mens_apparel: true)
+
+@mens_stores.each do |store|
+  puts store.name
+end
+
+@womens_stores_under_mil = Store.where(womens_apparel: true).where("annual_revenue < 1000000")
+
+@womens_stores_under_mil.each do |store|
+  puts store.name
+end
