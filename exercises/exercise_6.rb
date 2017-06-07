@@ -4,15 +4,13 @@ require_relative './exercise_2'
 require_relative './exercise_3'
 require_relative './exercise_4'
 require_relative './exercise_5'
-require "pry"
+
 
 puts "Exercise 6"
 puts "----------"
 
 # Your code goes here ...
 
-
-binding.pry
 
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
 @store1.employees.create(first_name: "Wendy", last_name: "Wandell", hourly_rate: 50)
